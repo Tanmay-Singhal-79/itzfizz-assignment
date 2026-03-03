@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description"
+    content="ITZFIZZ – Premium scroll-driven automotive landing experience. Smooth, modern, and performant." />
+  <title>ITZFIZZ – Premium Experience</title>
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Bebas+Neue&display=swap"
+    rel="stylesheet" />
+
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+
+  <!-- ───────────────────────────────────────────────
+       HERO SECTION  (pinned during scroll)
+  ─────────────────────────────────────────────────── -->
+  <section class="hero" id="hero">
+
+    <!-- Accent strip – purely decorative -->
+    <div class="accent-strip" aria-hidden="true"></div>
+
+    <!-- Navigation bar -->
+    <nav class="nav" id="nav">
+      <a href="#" class="nav-logo">ITZFIZZ</a>
+      <ul class="nav-links">
+        <li><a href="#about">About</a></li>
+        <li><a href="#stats">Results</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+      <a href="#contact" class="nav-cta">Get Started</a>
+    </nav>
+
+    <!-- ── Headline ── -->
+    <div class="hero-headline-wrap" id="headline-wrap">
+      <h1 class="hero-headline" aria-label="WELCOME ITZFIZZ">
+        <!-- Each letter = individual span for stagger -->
+        <span class="letter">W</span><span class="letter">E</span><span class="letter">L</span><span
+          class="letter">C</span><span class="letter">O</span><span class="letter">M</span><span class="letter">E</span>
+        <span class="letter space" aria-hidden="true">&nbsp;</span>
+        <span class="letter accent-letter">I</span><span class="letter accent-letter">T</span><span
+          class="letter accent-letter">Z</span><span class="letter accent-letter">F</span><span
+          class="letter accent-letter">I</span><span class="letter accent-letter">Z</span><span
+          class="letter accent-letter">Z</span>
+      </h1>
+      <p class="hero-sub" id="hero-sub">Redefining how your customers connect, convert, and come back.</p>
+    </div>
+
+    <!-- ── Car image (scroll-driven element) ── -->
+    <div class="car-track" id="car-track">
+      <img src="hero_car.png" alt="Premium luxury vehicle showcasing ITZFIZZ mobility experience" class="car-image"
+        id="car-image" draggable="false" />
+    </div>
+
+    <!-- ── Statistics cards ── -->
+    <div class="stats-row" id="stats-row">
+      <div class="stat-card" id="stat-1">
+        <span class="stat-number">58<span class="stat-unit">%</span></span>
+        <p class="stat-label">Increase in pick‑up<br />point use</p>
+      </div>
+      <div class="stat-card" id="stat-2">
+        <span class="stat-number">27<span class="stat-unit">%</span></span>
+        <p class="stat-label">Increase in<br />conversion</p>
+      </div>
+      <div class="stat-card" id="stat-3">
+        <span class="stat-number">23<span class="stat-unit">%</span></span>
+        <p class="stat-label">Decreased<br />customer calls</p>
+      </div>
+      <div class="stat-card" id="stat-4">
+        <span class="stat-number">40<span class="stat-unit">%</span></span>
+        <p class="stat-label">Improved<br />response time</p>
+      </div>
+    </div>
+
+    <!-- Scroll cue -->
+    <div class="scroll-cue" id="scroll-cue" aria-hidden="true">
+      <span>Scroll</span>
+      <div class="scroll-line"></div>
+    </div>
+
+  </section>
+  <!-- /hero -->
+
+
+
+
+
+  <!-- ───────────────────────────────────────────────
+       CONTACT / FOOTER SECTION
+  ─────────────────────────────────────────────────── -->
+  <section class="contact-section" id="contact">
+    <div class="contact-inner">
+      <span class="about-eyebrow">Let's Talk</span>
+      <h2 class="contact-heading">Ready to transform<br />your customer journey?</h2>
+      <a href="#" class="contact-cta">Work With Us →</a>
+    </div>
+    <footer class="footer">
+      <span>hello@itzfizz.com</span>
+    </footer>
+  </section>
+
+
+  <!-- ── GSAP CDN ── -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+  <script src="script.js"></script>
+</body>
+
+</html>
